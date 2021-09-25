@@ -9,7 +9,7 @@ async function postData() {
     };
     userDetails = JSON.stringify(client);
     
-    res=await fetch("https://hackersvilla.xyz:5000/register",
+    res=await fetch("register",
                     {
                         method:'POST',  headers: {
                     'Accept': 'application/json',
