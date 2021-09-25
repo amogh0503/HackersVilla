@@ -1,3 +1,4 @@
+//register
 async function postData() {
 
     client = {
@@ -30,6 +31,7 @@ async function postData() {
     
 }
 
+//login
 async function lData(){
     client2 = {
         email:loginData.lmail.value,
@@ -38,7 +40,7 @@ async function lData(){
     
     loginDetails = JSON.stringify(client2);
 
-    res = await fetch("https://hackersvilla.xyz:5000/login",
+    res = await fetch("login",
             {
             method:'POST',  headers: {
             'Accept': 'application/json',
