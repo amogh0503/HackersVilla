@@ -19,7 +19,7 @@ async function postData() {
     res=await res.json();
     if(res.code===201)
     {   console.log('redirect')
-        var redirect = confirm('Registration Sucessful\n\nLogin to Continue');
+        let redirect = confirm('Registration Sucessful\n\nLogin to Continue');
     if(redirect){
         const container = document.querySelector(".container");
         container.classList.remove("sign-up-mode");
@@ -50,7 +50,9 @@ async function lData(){
     res = await  res.json();
     console.log(res)
     if(res.code===202){
-        confirm('You are Logged in')
+        let redirect = confirm('You are Logged in')
+        if(redirect)
+            window.location = "/"
     }
     if(res.code===200){
         confirm('Wrong Password or Email')
