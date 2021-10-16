@@ -96,11 +96,11 @@ app.get("/sample",function(req,res) {
 
 });
 
-app.get("/*",function (req,res) {
-	res
-		.status(404)
-		.sendFile(path.join(__dirname,"404.html"));
-});
+// app.get("/*",function (req,res) {
+// 	res
+// 		.status(404)
+// 		.sendFile(path.join(__dirname,"404.html"));
+// });
 
 app.listen(port,() => {
 	console.log("app is running on Port " + port)	
