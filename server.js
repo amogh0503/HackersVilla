@@ -92,7 +92,8 @@ app.get("/bootcamp",function(req,res) {
 });
 
 app.get("/sample",function(req,res) {
-	res.status(200).header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+	res.send('hello');
+	// res.status(200).header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
 
 });
 
