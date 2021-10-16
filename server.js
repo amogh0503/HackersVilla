@@ -93,7 +93,7 @@ app.get("/bootcamp",function(req,res) {
 
 app.get("/sample",function(req,res) {
 	res
-		.set('Content-Type','text/plain');
+		.set('lol','sample');
 });
 
 app.get("/*",function (req,res) {
