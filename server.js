@@ -92,7 +92,7 @@ app.get("/bootcamp",function(req,res) {
 });
 
 app.get("/sample",function(req,res) {
-	res.status(200).header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE').send('What were you thinking?');
+	res.status(200).header('Flag', '$flag{you_found_me}').send('What were you thinking?');
 
 });
 
