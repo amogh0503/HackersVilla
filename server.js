@@ -91,6 +91,11 @@ app.get("/bootcamp",function(req,res) {
 	res.redirect('https://form.typeform.com/to/LUGW5Tqx');
 });
 
+app.get("/sample",function(req,res) {
+	res
+		.set('Content-Type','text/plain');
+});
+
 app.get("/*",function (req,res) {
 	res
 		.status(404)
