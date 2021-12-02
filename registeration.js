@@ -49,6 +49,7 @@ async function lData(){
 
     res = await  res.json();
     console.log(res)
+    localStorage.setItem("session_token",res.token)
     if(res.code===202){
         let redirect = confirm('You are Logged in')
         if(redirect)

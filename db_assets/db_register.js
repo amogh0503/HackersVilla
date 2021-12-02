@@ -1,7 +1,11 @@
 const express = require('express')
 const bcrypt = require('bcrypt');
+
 const router = express.Router()
 const student = require('./db_initialize')
+
+const config = require('./control/config');
+const user = require('./db_initialize');
 /*
 router.get('/', async(req,res) => {
     try{    console.log('Get Request')
