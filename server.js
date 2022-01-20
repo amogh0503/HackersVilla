@@ -91,8 +91,8 @@ app.get("/bootcamp",function(req,res) {
 	res.redirect('https://form.typeform.com/to/LUGW5Tqx');
 });
 
-app.get("/sample",function(req,res) {
-	res.status(200).header('Flag', '$flag{you_found_me}').send('What were you thinking?');
+app.get("/discord",function(req,res) {
+	res.redirect('https://discord.gg/ScYJGAvHdJ');
 
 });
 
