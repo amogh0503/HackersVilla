@@ -96,7 +96,7 @@ app.get("/discord",function(req,res) {
 
 });
 
-app.get("/discord",function(req,res) {
+app.get("/youtube",function(req,res) {
 	res.redirect('https://www.youtube.com/channel/UCM6PAPjFPjCdkgpzM96njlw');
 
 });
