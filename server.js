@@ -96,6 +96,11 @@ app.get("/discord",function(req,res) {
 
 });
 
+app.get("/discord",function(req,res) {
+	res.redirect('https://www.youtube.com/channel/UCM6PAPjFPjCdkgpzM96njlw');
+
+});
+
 app.get("/*",function (req,res) {
 	res
 		.status(404)
