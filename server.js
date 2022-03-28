@@ -3,6 +3,8 @@ const port = process.env.PORT || 5000
 const mongoose = require('mongoose')
 const url = "mongodb://localhost/studentData"
 
+
+
 const app = express();
 mongoose.connect(url, {useNewUrlParser:true})
 const con = mongoose.connection
@@ -89,6 +91,20 @@ app.get("/login",function (req,res) {
 
 app.get("/bootcamp",function(req,res) {
 	res.redirect('https://form.typeform.com/to/LUGW5Tqx');
+});
+
+
+app.get("/dashboard",function (req,res) {
+	res
+		.status(200)
+		.sendFile(path.join(__dirname,"dashboard.html"));
+
+});
+
+app.get("/profile",function (req,res) {
+	res
+		.status(200)
+		.sendFile(path.join(__dirname,"profile.html"));
 });
 
 app.get("/*",function (req,res) {

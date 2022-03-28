@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/Toggle-Switch-1.css">
     <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
 </head>
-
+<script src="./dashboardData.js"></script>
 <body id="page-top">
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background: var(--bs-purple);">
@@ -23,11 +23,11 @@
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link active" href="dashboard.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile"><i class="fas fa-user"></i><span>Profile</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="sessions.html"><i class="fas fa-table"></i><span>Online Sessions</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user-graduate"></i><span>Curriculum and Payments</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="login"><i class="fas fa-user-graduate"></i><span>Curriculum and Payments</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="register"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
@@ -129,8 +129,9 @@
                                     <div class="row align-items-center no-gutters">
                                         <div class="col me-2">
                                             <div class="text-uppercase text-success fw-bold text-xs mb-1"><span>PAYMENTS</span></div>
-                                            <div class="text-dark fw-bold h5 mb-0"><span>Rs. 5,999</span></div>
-                                        </div>
+                                            <div  class="text-dark fw-bold h5 mb-0">
+                                            <img src onerror="showPayment()" id="payment" /></div>
+                                            </div>
                                         <div class="col-auto"><i class="fas fa-rupee-sign fa-2x text-gray-300"></i></div>
                                     </div>
                                 </div>
@@ -221,6 +222,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script src="assets/js/bs-init_dashboard.js"></script>
     <script src="assets/js/theme.js"></script>
+    
 </body>
 
 </html>
