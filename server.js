@@ -105,6 +105,10 @@ app.get("/youtube",function(req,res) {
 
 });
 
+app.get("/instagram",function(req,res) {
+	res.redirect('https://www.instagram.com/hackersvilla.xyz');
+});
+
 app.get("/*",function (req,res) {
 	res
 		.status(404)
