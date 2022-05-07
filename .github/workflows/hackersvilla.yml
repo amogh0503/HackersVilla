@@ -17,7 +17,7 @@ jobs:
             cd HackersVilla
             git pull           
             echo "2807" sudo -S -k sudo systemctl restart nginx
-            pm2 restart server
+#            pm2 restart server
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USER }}
           key: ${{ secrets.KEY}}
