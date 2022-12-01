@@ -92,7 +92,7 @@ app.get("/ctf",function(req,res) {
 });
 
 app.get("/bootcamp",function(req,res) {
-	res.redirect('https://form.typeform.com/to/LUGW5Tqx');
+	res.redirect('https://hui2y48bucx.typeform.com/to/pVgwzGJ8');
 });
 
 app.get("/discord",function(req,res) {
