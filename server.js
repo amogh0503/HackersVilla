@@ -88,7 +88,7 @@ app.get("/login",function (req,res) {
 });
 
 app.get("/ctf",function(req,res) {
-	res.status(200).header('Flag', 'aurora{you_found_me}').send('What were you thinking?');
+	res.status(200).header('Flag', 'KYC{I_will_find_you}').send('Go around!');
 });
 
 app.get("/bootcamp",function(req,res) {
