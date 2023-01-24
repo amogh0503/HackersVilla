@@ -91,6 +91,10 @@ app.get("/ctf",function(req,res) {
 	res.status(200).header('Flag', 'KYC{I_will_find_you}').send('Go around!');
 });
 
+app.get("/sqli",function(req,res) {
+	res.redirect('http://kyc.42web.io');
+});
+
 app.get("/bootcamp",function(req,res) {
 	res.redirect('https://hui2y48bucx.typeform.com/to/pVgwzGJ8');
 });
