@@ -92,7 +92,7 @@ app.get("/ctf",function(req,res) {
 });
 
 app.get("/sqli",function(req,res) {
-	res.redirect('http://kyc.42web.io');
+	res.redirect('http://loginpage.unaux.com/index.php');
 });
 
 app.get("/bootcamp",function(req,res) {
