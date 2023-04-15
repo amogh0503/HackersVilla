@@ -87,6 +87,24 @@ app.get("/login",function (req,res) {
 		.sendFile(path.join(__dirname,"signin.html"));
 });
 
+app.get("/terms",function (req,res) {
+	res
+		.status(200)
+		.sendFile(path.join(__dirname,"terms.html"));
+});
+
+app.get("/refund",function (req,res) {
+	res
+		.status(200)
+		.sendFile(path.join(__dirname,"refund.html"));
+});
+
+app.get("/privacy",function (req,res) {
+	res
+		.status(200)
+		.sendFile(path.join(__dirname,"privacy.html"));
+});
+
 app.get("/ctf",function(req,res) {
 	res.status(200).header('Flag', 'KYC{I_will_find_you}').send('Go around!');
 });
@@ -112,6 +130,7 @@ app.get("/youtube",function(req,res) {
 app.get("/instagram",function(req,res) {
 	res.redirect('https://www.instagram.com/hackersvillaxyz');
 });
+
 
 app.get("/*",function (req,res) {
 	res
