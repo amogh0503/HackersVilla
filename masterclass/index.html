@@ -478,7 +478,7 @@
                             <i class="fa fa-phone icon"></i>
                             <input class="form-control input-field" type="text" required="true" name="phone" placeholder="ENTER 10 DIGIT NUMBER">
                         </div>
-                        <input style="margin-top: 10px; width: 100%; height: 50px; font-size: 19px; font-weight: bold; text-align: center;color: var(--bs-white);background: var(--bs-blue);font-size: 18px; border: 2px dotted var(--bs-btn-disabled-color); box-shadow: 7px 8px #565656; color:white" class="btn reg" type="submit" name="submit" value="🏆 SECURE MY FREE SPOT NOW!">
+                        <input id="mc-register" style="margin-top: 10px; width: 100%; height: 50px; font-size: 19px; font-weight: bold; text-align: center;color: var(--bs-white);background: var(--bs-blue);font-size: 18px; border: 2px dotted var(--bs-btn-disabled-color); box-shadow: 7px 8px #565656; color:white" class="btn reg" type="submit" name="submit" value="🏆 SECURE MY FREE SPOT NOW!">
                     </form>
                     
                     <div class="row">
@@ -501,6 +501,7 @@
         const form = document.forms['google-sheet']
       
         form.addEventListener('submit', e => {
+          document.getElementById("mc-register").value("PLEASE WAIT...");
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => location.href='https://hackersvilla.xyz/hacknslash-masterclass-thank-you')
