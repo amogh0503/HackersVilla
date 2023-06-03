@@ -501,7 +501,7 @@
         const form = document.forms['google-sheet']
       
         form.addEventListener('submit', e => {
-        //   document.getElementById("mc-register").value("PLEASE WAIT...");
+        document.getElementById("mc-register").innerText="HELLO";
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => location.href='https://hackersvilla.xyz/hacknslash-masterclass-thank-you')
