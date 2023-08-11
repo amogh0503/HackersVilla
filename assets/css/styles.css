@@ -291,3 +291,17 @@
     }
   }
 
+
+  #ad_2, #ad_3{
+    display: none;
+}
+
+.form-check:hover input {
+    background-color: #ccc;
+}
+
+.form-check input:checked {
+    background-color: indigo;
+}
+
+
