@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('ad_fin').style.borderColor="#ccc";
         document.getElementById('ad_fin').style.borderWidth="1px";
         price = '₹19,999';
-        button_text = "Purchase Now !";
-        advanceButton.setAttribute("onClick","window.location.href = 'https://hackersvilla.mojo.page/advanced-course'");
+        button_text = "Enroll Now";
+        advanceButton.setAttribute("href","https://hackersvilla.mojo.page/advanced-course");
         document.getElementById('ad_1').style.display="block";
         document.getElementById('ad_2').style.display="none";
         document.getElementById('ad_3').style.display="none";
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('ad_fin').style.borderColor="#ccc";
         document.getElementById('ad_fin').style.borderWidth="1px";
         price = '₹14,999';
-        button_text = "Apply for Student Discount";
-        advanceButton.setAttribute("onClick","window.location.href = 'https://forms.gle/9GhJJtPuJmehL2Jz6'");
+        button_text = "Apply for Student Aid";
+        advanceButton.setAttribute("href","https://forms.gle/9GhJJtPuJmehL2Jz6");
         document.getElementById('ad_2').style.display="block";
         document.getElementById('ad_1').style.display="none";
         document.getElementById('ad_3').style.display="none";
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('ad_stu').style.borderWidth="1px";
         price = '₹9,999';
         button_text = "Apply for Financial Aid";
-        advanceButton.setAttribute("onClick","window.location.href = 'https://forms.gle/9GhJJtPuJmehL2Jz6'");
+        advanceButton.setAttribute("href","https://forms.gle/9GhJJtPuJmehL2Jz6");
         document.getElementById('ad_3').style.display="block";
         document.getElementById('ad_1').style.display="none";
         document.getElementById('ad_2').style.display="none";
