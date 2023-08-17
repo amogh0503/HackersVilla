@@ -108,7 +108,7 @@ app.get("/sqli",function(req,res) {
 });
 
 app.get("/bootcamp",function(req,res) {
-	res.redirect('https://hui2y48bucx.typeform.com/to/pVgwzGJ8');
+	res.redirect('https://imjo.in/hKaJKj');
 });
 
 app.get("/discord",function(req,res) {
