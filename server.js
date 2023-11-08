@@ -116,6 +116,11 @@ app.get("/discord",function(req,res) {
 
 });
 
+app.get("/whatsapp",function(req,res) {
+	res.redirect('https://whatsapp.com/channel/0029VaDTkiiIt5s25C86Zw30');
+
+});
+
 app.get("/youtube",function(req,res) {
 	res.redirect('https://www.youtube.com/channel/UCM6PAPjFPjCdkgpzM96njlw');
 
