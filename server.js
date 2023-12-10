@@ -111,6 +111,10 @@ app.get("/bootcamp",function(req,res) {
 	res.redirect('https://imjo.in/uuxMTB');
 });
 
+app.get("/webinar",function(req,res) {
+	res.redirect('https://chat.whatsapp.com/BjwioRfsIHI8yIstvy3G3A');
+});
+
 app.get("/discord",function(req,res) {
 	res.redirect('https://discord.gg/ScYJGAvHdJ');
 
