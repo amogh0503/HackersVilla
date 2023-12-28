@@ -120,6 +120,11 @@ app.get("/discord",function(req,res) {
 
 });
 
+app.get("/linkedin",function(req,res) {
+	res.redirect('https://linkedin.com/company/hackersvilla');
+
+});
+
 app.get("/whatsapp",function(req,res) {
 	res.redirect('https://whatsapp.com/channel/0029VaDTkiiIt5s25C86Zw30');
 
