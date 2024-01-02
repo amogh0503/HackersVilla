@@ -99,6 +99,12 @@ app.get("/privacy",function (req,res) {
 		.sendFile(path.join(__dirname,"privacy.html"));
 });
 
+app.get("/shipping-and-delivery",function (req,res) {
+	res
+		.status(200)
+		.sendFile(path.join(__dirname,"shipping.html"));
+});
+
 app.get("/ctf",function(req,res) {
 	res.status(200).header('Flag', 'KYC{I_will_find_you}').send('Go around!');
 });
