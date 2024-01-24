@@ -145,10 +145,10 @@ app.get("/instagram",function(req,res) {
 	res.redirect('https://www.instagram.com/hackersvillaxyz');
 });
 
-app.get("/hacknslash-masterclass-thank-you",function (req,res) {
+app.get("/hacknslash-workshop-thank-you",function (req,res) {
 	res
 		.status(200)
-		.sendFile(path.join(__dirname,"/masterclass/thanks.html"));
+		.sendFile(path.join(__dirname,"/workshop/thanks.html"));
 });
 
 app.get("/*",function (req,res) {
