@@ -1,11 +1,9 @@
 const express = require('express');
 const port = process.env.PORT || 5000
-const mongoose = require('mongoose')
-const url = "mongodb://localhost/studentData"
 
 const app = express();
-mongoose.connect(url, {useNewUrlParser:true})
-const con = mongoose.connection
+// mongoose.connect(url, {useNewUrlParser:true})
+// const con = mongoose.connection
 app.use(express.json());
 
 var path = require("path");
@@ -18,18 +16,18 @@ app.use(function(req,res,next)
 	next();
 })
 
-const db_register = require('./db_assets/db_register')
-app.use('/register',db_register)
+// const db_register = require('./db_assets/db_register')
+// app.use('/register',db_register)
 
 
-const db_login = require('./db_assets/db_login')
-app.use('/login',db_login)
+// const db_login = require('./db_assets/db_login')
+// app.use('/login',db_login)
 
-con
-.once('open',() => console.log("Connected..."))
-.on('error', error => {
-	console.log('Your Error',error);
-});
+// con
+// .once('open',() => console.log("Connected..."))
+// .on('error', error => {
+// 	console.log('Your Error',error);
+// });
 
 
 /*
