@@ -1,0 +1,129 @@
+/********hero area*********/
+.hero-2 .hero-img2 {
+    left: 0;
+    right: auto;
+}
+.hero-counter-wrap {
+    padding: 13px 20px 13px 50px;
+    right: -60px;
+    left: auto;
+}
+.hero-counter-wrap.hero-counter2 {
+    left: 0;
+    right: auto;
+}
+.hero-2 .shape2 {
+    right: 0;
+    left: auto;
+    img {
+        transform: none;
+    }
+}
+.hero-2 .shape4 {
+    right: 24%;
+    left: auto;
+}
+@include lg {
+    .hero-style2 .checklist {
+        margin-left: -33px;
+        margin-right: 0;
+    }
+}
+@include md {
+    .hero-style2 .checklist {
+        margin-left: 0;
+        ul {
+            margin: auto;
+        }
+    }
+}
+@include vxs {
+    .hero-style2 {
+        text-align: right;
+    }
+}
+/*******about area*******/
+.img-box2 {
+    margin-left: 50px;
+    padding-left: 160px;
+    margin-right: 0;
+    padding-right: 0;
+    .img2 {
+        left: 0;
+        right: auto;
+        &:after {
+            right: -10px;
+            left: auto;
+        }
+    }
+    .img1 img {
+        border-radius: 10px 0 0 10px;
+    }
+    @include xl {
+        padding-left: 135px;
+        margin-left: 0;
+    }
+    @include md {
+        margin-left: 50px;
+    }
+    @include xs {
+        padding: 0;
+        margin: 0 15px;
+        .img1 img {
+            border-radius: 10px;
+        }
+    } 
+}
+.about-experience-wrap {
+    left: 98px;
+    right: auto;
+}
+.about2-title-wrap {
+    @include lg {
+        margin-right: 40px;
+        margin-left: 0;
+    }
+    @include xs {
+        margin: 0 15px;
+    }
+}
+/*******cta area*******/
+.cta4-shape2 {
+    left: 0 !important;
+    right: auto !important;
+    img {
+        transform: rotateY(180deg);
+    }
+}
+.cta4-shape1 {
+    right: auto !important;
+    left: 10% !important;
+}
+.cta-4-thumb {
+    transform: rotateY(180deg);
+}
+/*******video area*******/
+.video-shape1 {
+    left: -35% !important;
+    right: auto !important;
+    img {
+        transform: rotateY(180deg);
+    }
+    @include lg {
+        left: -85% !important;
+    }
+}
+/*********testi area*********/
+.testi-slider2 .slick-arrow {
+    left: 0;
+    right: auto;
+}
+.testi-slider2 .slick-arrow.slick-next {
+    left: calc(60px + 20px);
+}
+/*******admission-area*******/
+.admission-thumb {
+    right: 0;
+    left: auto;
+    transform: rotateY(180deg);
+}

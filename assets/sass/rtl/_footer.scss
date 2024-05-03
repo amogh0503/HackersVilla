@@ -1,0 +1,42 @@
+/******footer layout1******/
+.footer-widget .widget_title:before, .footer-widget .widget_title:after {
+    left: auto;
+    right: 0;
+}
+.footer-widget .widget_title:after {
+    right: 71px;
+}
+.footer-links li {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.footer-links li:last-child {
+    margin-left: 0;
+}
+.footer-widget.widget_meta a, .footer-widget.widget_pages a, .footer-widget.widget_archive a, .footer-widget.widget_categories a, .footer-widget.widget_nav_menu a {
+    padding: 0 15px 0 0px;
+}
+.footer-widget.widget_meta a:before, .footer-widget.widget_pages a:before, .footer-widget.widget_archive a:before, .footer-widget.widget_categories a:before, .footer-widget.widget_nav_menu a:before {
+    left: auto;
+    right: 0;
+    transform: translateY(0%);
+}
+/*********footer layout2**********/
+.footer-layout-default .footer-top .footer-logo {
+    border-right: 0;
+    border-left: 1px solid #283752;
+    padding: 85px 0;
+    padding-left: 78px;
+}
+@include lg {
+    .footer-layout-default .footer-top .footer-logo {
+        padding: 65px 0;
+        padding-left: 28px;
+    }
+}
+@include md {
+    .footer-layout-default .footer-top .footer-logo {
+        padding: 65px 0 30px;
+        border: 0;
+    }
+}

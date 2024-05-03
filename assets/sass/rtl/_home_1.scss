@@ -1,0 +1,313 @@
+/******hero section*****/
+.hero-1 .shape1 {
+    left: 0;
+    right: auto;
+    transform: rotateY(180deg);
+    bottom: -1px;
+}
+.hero-1 .shape2 {
+    left: 0;
+    right: auto;
+    img {
+        transform: rotateY(180deg);
+    }
+}
+.hero-1 .shape3 {
+    right: -330px;
+    left: auto;
+}
+.hero-1 .shape4 {
+    left: 3% !important;
+    right: auto !important;
+} 
+.hero-1 .shape5 {
+    right: 0% !important;
+    left: auto !important;
+    img {
+        transform: rotateY(180deg);
+    }
+} 
+.hero-slider-1 .slick-dots {
+    left: 25%;
+    right: auto;
+    @include hd {
+        left: 30.5%;
+    }
+    @media (max-width: 1600px) {
+        left: 20%;   
+    }
+}
+.hero-1 .hero-img1 {
+    margin-left: -62px;
+    margin-right: 0;
+    @include xxl {
+        margin-left: 0;
+    }
+}
+.hero-style1 .hero-subtitle span {
+    margin-left: 10px;
+    margin-right: 0;
+}
+.slick-dots li {
+    margin-left: 10px;
+    margin-right: 0;
+}
+.slick-dots li:last-child {
+    margin-left: 0;
+}
+/*******category sec*******/
+.category-sec-wrap .category-shape-arrow {
+    transform: rotateY(180deg);
+}
+.category-sec-wrap .category-slider .slick-arrow {
+    left: 60px;
+    right: auto;
+}
+.category-sec-wrap .category-slider .slick-arrow.slick-prev {
+    left: 10px;
+    right: auto;
+}
+.category-sec-wrap .category-slider {
+    @include ml {
+        margin-right: 30px;
+        margin-left: 0;
+    }
+    @include xl {
+        margin-top: 60px;
+    }
+    @include lg {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @include md {
+        margin-top: 0;
+    }
+}
+/*******about area*******/
+.img-box1 {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 0;
+    .about-shape1 {
+        left: 0 !important;
+    }
+    @include ml {
+        margin-left: 0;
+    }
+}
+/*****course *****/
+.course-img .tag {
+    left: auto;
+    right: 20px;
+    i {
+        margin-left: 3px;
+        margin-right: 0;
+    }
+}
+.course-author .offer-tag {
+    margin-right: auto;
+    margin-left: 0;
+}
+.course-meta a i, .course-meta span i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+/********cta area*********/
+.cta-img-1 {
+    left: 0;
+    right: auto;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+    @include md {
+        clip-path: none;
+    }
+}
+.play-btn.style2:after, .play-btn.style2:before {
+    margin-right: -20px;
+}
+.cta-wrap {
+    margin-left: 20px;
+    margin-right: 0;
+    .th-btn {
+        margin-right: auto;
+        margin-left: 0;
+    }
+    @include xxl {
+        margin-left: 160px;
+    }
+    @include ml {
+        margin-left: 60px;
+    }
+    @include lg {
+        margin-left: -55px;
+    }
+    @include md {
+        margin-left: 0;
+    }
+}
+/******why choose us******/
+.wcu-img-1 {
+    margin-left: 55px;
+    margin-right: 0;
+    .student-count {
+        right: -80px;
+        left: auto;
+        @include xxl {
+            right: -55px;
+        }
+    }
+    @include xxl {
+        margin-left: 10px;
+        margin-right: 55px;
+    }
+    @include lg {
+        margin-left: 0;
+    }
+    @include vxs {
+        margin-right: 0;
+        .student-count {
+            right: 20px;
+        }
+    }
+} 
+.why-shape-2 {
+    left: auto;
+    right: 0;
+}
+.why-shape-1 {
+    right: 7% !important;
+    left: auto !important;
+}
+.why-shape-3 {
+    left: -3% !important;
+    right: auto !important;
+}
+.wcu-box {
+    &:after {
+        right: 0;
+        left: auto;
+        border-radius: 0 10px 10px 0;
+    }
+    &:before {
+        border-right: solid 40px #D0DBE9;
+        border-left: solid 40px transparent;
+        right: 0;
+        left: auto;
+        border-radius: 0 10px 0 0;
+    }
+}
+/********counter area*******/
+.counter-card-wrap {
+    border-left: 1px solid;
+    border-right: 0;
+    &:last-child {
+        border-left: 0;
+    }
+    @include xs {
+        border-left: 0 !important;
+    }
+}
+.counter-card-wrap:nth-child(2) {
+    @include lg {
+        border-left: 0;
+    }
+}
+/********team area*******/
+.team-card .team-social {
+    left: 30px;
+    right: auto;
+}
+.team-card .team-info span {
+    padding-left: 25px;
+    margin-left: 25px;
+    padding-right: 0;
+    margin-right: 0;
+    @include ml {
+        padding-left: 11px;
+        margin-left: 11px;
+    }
+}
+.team-card .team-info span:last-child {
+    padding-left: 0;
+    margin-left: 0;
+}
+.team-card .team-info span:after {
+    left: 0;
+    right: auto;
+}
+.team-card .team-info span i {
+    margin-left: 10px;
+    margin-right: 0;
+}
+.team-bg-shape1 {
+    right: -2% !important;
+    left: auto !important;
+    img {
+        transform: rotateY(180deg);
+    }
+}
+.team-bg-shape5 {
+    left: -7% !important;
+    right: auto  !important;
+    img {
+        transform: rotateY(180deg);
+    }
+}
+/********event area*******/
+.event-meta p i, .event-meta span i, .event-meta a i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.event-card .event-card-shape {
+    left: 40px;
+    right: auto;
+}
+.event-card_img {
+    @include lg {
+        transform: rotateY(180deg);
+    }
+}
+@include md {
+    .event-card {
+        margin-right: 30px;
+        margin-left: 0;
+    }
+    .event-card_img {
+        right: -30px;
+        left: auto;
+    }
+    .event-card .event-author {
+        padding-right: 160px;
+        padding-left: 0;
+    }
+}
+@include xs {
+    .event-card_img {
+        width: 180px;
+    }
+    .event-card .event-author {
+        padding-right: 140px;
+    }
+}
+@include vxs {
+    .event-card_img {
+        width: 140px;
+    }
+    .event-card .event-author {
+        padding-right: 100px;
+    }
+}
+@media (max-width: 320px) {
+    .event-card .event-author {
+        padding-right: 0;
+    }
+    .event-card {
+        margin-right: 0px;
+    }
+}
+/********testi area*******/
+.testi-box .testi-box-bg-shape {
+    right: 0;
+    left: auto;
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,125 @@
+.tutor-widget-course-categories,
+.tutor-widget-course-levels,
+.widget_nav_menu,
+.widget_meta,
+.widget_pages,
+.widget_archive,
+.widget_price_filter,
+.widget_time_duration,
+.widget_instructor,
+.widget_categories {
+  .tutor-list,
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 0;
+  }
+  .tutor-list {
+    margin: 0 0 -7px 0;
+  }
+  .menu,
+  .wp-block-categories,
+  >ul {
+    margin: 0 0 -20px 0;
+  }
+
+  a {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 0 35px 0 29px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.18;
+    color: $body-color;
+
+    &::before {
+      content: '\f02d';
+      @include equal-size(18px);
+      border-radius: 4px;
+      line-height: 18px;
+      font-size: 0.8em;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-family: $icon-font;
+      font-weight: 700;
+      color: $theme-color;
+      transition: all ease 0.4s;
+    }
+
+    &:hover {
+      color: $theme-color;
+      ~ span {
+        color: $theme-color;
+      }
+    }
+  }
+  .tutor-list-item,
+  li {
+    display: block;
+    position: relative;
+
+    &:last-child {
+      a {
+        border-bottom: none;
+      }
+    }
+
+    >span {
+      text-align: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 16px;
+      line-height: 1.18;
+      transition: all ease 0.4s;
+      color: $body-color;
+      font-weight: 400;
+    }
+  }
+
+  .children {
+    margin-left: 10px;
+  }
+  .sub-cat {
+    margin-left: 30px;
+  }
+  input[type="checkbox"]:checked ~ label:before {
+    border-radius: 4px;
+  }
+  &.style2 {
+    li {
+      margin-top: 18px;
+    }
+  }
+}
+.widget_nav_menu,
+.widget_meta,
+.widget_pages {
+  a {
+    padding-right: 20px;
+  }
+}
+
+
+.widget_nav_menu {
+  .sub-menu {
+    margin-left: 10px;
+  }
+}
+
+.wp-block-archives {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  a:not(:hover) {
+    color: inherit;
+  }
+}
+
+.th-blog ul.wp-block-archives li {
+  margin: 5px 0;
+}

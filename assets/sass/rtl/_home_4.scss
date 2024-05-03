@@ -1,0 +1,152 @@
+/******hero area******/
+.hero-4 .hero-social {
+    left: -183px;
+    right: auto;
+}
+.hero-4 .hero-img4 {
+    margin-left: -165px;
+    margin-right: 0;
+}
+.hero-4 .hero-img4 .img2 {
+    right: -30px;
+    left: auto;
+}
+.hero-4 .shape1 {
+    left: 170px;
+    right: auto;
+}
+@media (max-width:1600px) {
+    .hero-4 .hero-img4 {
+        margin-left: 0;
+    }
+}
+@include xxl {
+    .hero-4 .hero-img4 {
+        margin-left: 75px;
+    }
+}
+@include ml {
+    .hero-4 .hero-img4 {
+        margin-left: 50px;
+    }
+}
+@include xl {
+    .hero-4 .hero-img4 {
+        margin-right: 30px;
+    }
+}
+@include lg {
+    .hero-4 .shape1 {
+        left: 100px;
+    }
+}
+/******testimonial area******/
+.testi-slider-4 {
+    margin-right: calc(-400px + 12px);
+    margin-left: 0;
+}
+.testi-slider-4 .slick-list {
+    margin-right: 400px;
+    margin-left: 0;
+}
+.testi-slider-4 .slick-dots {
+    margin-right: calc(200px - 12px);
+    margin-left: 0;
+}
+.testi-box.style3 .testi-box_img:after {
+    right: -8px;
+    left: auto;
+}
+.testi-box.style3 .testi-box-author-details {
+    margin-left: auto;
+    margin-right: 20px;
+}
+@include lg {
+    .testi-slider-4 .slick-list {
+        margin-right: 300px;
+    }
+    .testi-slider-4 {
+        margin-right: calc(-300px + 12px);
+    }
+}
+@include md {
+    .testi-slider-4 .slick-list {
+        margin-right: 0;
+    }
+    .testi-slider-4 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@include xs {
+    .testi-slider-4 {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+@media (max-width:320px) {
+    .testi-box.style3 .testi-box-author-details {
+        margin-right: 10px;
+    }
+}
+/*******event area*******/
+.event-grid .event-content {
+    padding: 60px 40px 60px 60px;
+    right: auto;
+    left: 0;
+    margin-right: 40px;
+    margin-left: 0;
+}
+.event-grid .event-content .event-bg-shape {
+    left: auto;
+    right: -40px;
+    transform: rotateY(180deg);
+}
+.event-grid:nth-of-type(odd) .event-content {
+    left: unset;
+    right: 0;
+    margin-right: 0;
+    margin-left: 40px;
+    padding: 60px 60px 60px 40px;
+}
+.event-grid:nth-of-type(odd) .event-content .event-bg-shape {
+    transform: none;
+    right: auto;
+    left: -40px;
+}
+@include xl {
+    .event-grid .event-content {
+        width: 66%;
+        padding: 50px 30px 50px 50px;
+    }
+    .event-grid:nth-of-type(odd) .event-content {
+        padding: 50px 50px 50px 30px;
+    }
+}
+@include lg {
+    .event-grid .event-content {
+        width: 73%;
+        padding: 40px 20px 40px 40px;
+    }
+    .event-grid:nth-of-type(odd) .event-content {
+        padding: 40px 40px 40px 20px;
+    }
+}
+@include sm {
+    .event-grid .event-content {
+        width: auto;
+        margin: 0;
+        padding: 40px;
+    }
+    .event-grid:nth-of-type(odd) .event-content {
+        margin: 0;
+    }
+}
+@include xs {
+    .event-grid:nth-of-type(odd) .event-content {
+        padding: 30px;
+    }
+    .event-grid .event-content {
+        padding: 30px;
+    }
+}

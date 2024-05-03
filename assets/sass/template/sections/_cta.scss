@@ -1,0 +1,192 @@
+.cta-area-1 {
+    position: relative;
+    padding: 38px 0;
+    @include md {
+        padding-bottom: 0;
+    }
+}
+.cta-wrap {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+    position: relative;
+    z-index: 3;
+    margin-right: 20px;
+    @media (max-width: 1600px) {
+        margin-right: 160px;
+    }
+    @include ml {
+        margin-right: 60px;
+    }
+    @include xl {
+        margin-right: 0;
+    }
+    @include lg {
+        margin-right: -55px;
+    }
+    @include md {
+        margin-right: 0;
+    }
+    @include sm {
+        display: block;
+        text-align: center;
+        .cta-icon {
+            margin-bottom: 20px;
+        }
+    }
+    .cta-title {
+        color: $white-color;
+    }
+    .cta-text {
+        margin-top: 20px;
+        margin-bottom: 0;
+        color: $white-color;
+        @include sm {
+            margin-bottom: 20px;
+        }
+    }
+    .th-btn {
+        margin-left: auto;
+        flex: none;
+    }
+}
+
+.cta-img-1 {
+    height: 100%;
+    min-height: 166px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+    @include ml {
+        width: 500px;
+    }
+    @include xl {
+        width: 400px;
+    }
+    @include lg {
+        width: 300px;
+    }
+    @include md {
+        position: relative;
+        clip-path: none;
+        width: 100%;
+        margin-top: 38px;
+    }
+    @include sm {
+        min-height: auto;
+        height: 250px;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .play-btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+/***Cta area 2***/
+.cta-area-2 {
+    padding-top: 230px;
+    overflow: hidden;
+    @include lg {
+        padding-top: 120px;
+        margin-top: 120px;
+    }
+    @include md {
+        padding-top: 90px;
+        margin-top: 90px;
+    }
+}
+.cta-bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    &:before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: #00112B;
+        opacity: 0.87;
+
+    }
+}
+.cta-bg-img2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.cta-wrap2 {
+    .cta-text {
+        max-width: 722px;
+        color: $border-color;
+        margin: 22px auto 0;
+    }
+}
+/*****Cta area 3****/
+.cta-area-3 {
+    transform: translate(0px, 122px);
+    margin-top: -122px;
+    position: relative;
+    z-index: 3;
+}
+.cta-card {
+    padding: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    @include sm {
+        padding: 40px;
+    }
+    @include xs {
+        padding: 30px;
+    }
+}
+.cta-wrap4 {
+    .cta-text {
+        color: $border-color;
+    }
+    @include xl {
+        margin-right: -2px;
+    }
+    @include lg {
+        margin-right: -35px;
+    }
+    @include md {
+        margin-right: 0;
+        max-width: 500px;
+        text-align: center;
+        margin: auto;
+    }
+}
+.cta4-shape4 {
+    top: -450px;
+    left: -350px;
+    width: 619.52px;
+    height: 619.52px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 100px;
+    transform: rotate(25.36deg);
+    z-index: 2;
+    animation: spin 40s linear infinite;
+}
+.cta-4-ripple-shape {
+    .ripple-1, 
+    .ripple-2, 
+    .ripple-3, 
+    .ripple-4, 
+    .ripple-5, 
+    .ripple-6 {
+        border: 3px solid rgba(255, 255, 255, 0.3);
+    }
+}

@@ -1,0 +1,129 @@
+.breadcumb-menu {
+  max-width: 100%;
+  padding: 0;
+  margin: 31px 0 -0.5em 0;
+  list-style-type: none;
+  position: relative;
+  li {
+    display: inline;
+    margin-right: 3px;
+    padding-right: 5px;
+    list-style: none;
+    position: relative;
+
+    &:after {
+      content: '\f061';
+      position: relative;
+      margin-left: 10px;
+      font-weight: 400;
+      font-size: 15px;
+      color: $white-color;
+      font-family: $icon-font;
+    }
+    a {
+      &:hover {
+        color: $theme-color;
+      }
+    }
+    &:last-child {
+      padding-right: 0;
+      margin-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }  
+    
+    // &:last-child {
+    //   &,
+    //   a,
+    //   span {
+    //     color: $theme-color;
+    //   }
+    // }
+  }
+
+  li,
+  a,
+  span {
+    white-space: normal;
+    color: inherit;
+    word-break: break-word;
+    font-weight: 400;
+    font-size: 20px;
+    color: $white-color;
+  }
+}
+
+.breadcumb-title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.18;
+  text-transform: uppercase;
+  color: $white-color;
+  margin: -0.2em 0 -0.26em 0;
+}
+
+
+.breadcumb-wrapper {
+  background-color: $title-color;
+  padding: 155px 0;
+  text-align: center;
+  overflow: hidden;
+  &:before {
+    z-index: -1;
+  }
+  .breadcumb-shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-position: right;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@include lg {
+  .breadcumb-title {
+    font-size: 42px;
+  }
+  .breadcumb-wrapper {
+    padding: 120px 0;
+  }
+}
+
+@include md {
+  .breadcumb-wrapper {
+    padding: 100px 0;
+  }
+  .breadcumb-menu {
+    margin: 16px 0 -0.5em 0;
+    li,
+    a,
+    span {
+      font-size: 16px;
+    }
+  }
+  .breadcumb-title {
+    font-size: 38px;
+  }
+}
+
+@include sm {
+  .breadcumb-wrapper {
+    padding: 80px 0;
+  }
+  .breadcumb-title {
+    font-size: 34px;
+  }
+}
+
+@include xs {
+  .breadcumb-title {
+    font-size: 32px;
+  }
+}

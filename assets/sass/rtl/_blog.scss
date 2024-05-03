@@ -1,0 +1,30 @@
+/********blog-area 1*******/
+.blog-single.style2 .blog-meta span, .blog-single.style2 .blog-meta a {
+    margin-right: 0;
+    margin-left: 25px;
+}
+.blog-meta span i, .blog-meta a i {
+    margin-left: 10px;
+    margin-right: 0;
+}
+/********blog-area 2*******/
+.blog-single.style3 .blog-meta span, .blog-single.style3 .blog-meta a {
+    margin-left: 25px;
+    margin-right: 0;
+}
+/*******blog-area 3*******/
+.blog-single.style4 .blog-meta span:not(:last-child), .blog-single.style4 .blog-meta a:not(:last-child) {
+    padding-left: 25px;
+    padding-right: 0;
+}
+/*********blog area 4********/
+.blog-single.style5 .blog-meta span:not(:last-child), .blog-single.style5 .blog-meta a:not(:last-child) {
+    padding-left: 25px;
+    padding-right: 0;
+    @include vxs {
+        padding-left: 20px;
+    }
+}
+.blog-single.style5 .blog-title a {
+    background-position: bottom right;
+}

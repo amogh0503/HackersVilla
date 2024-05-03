@@ -1,0 +1,39 @@
+.link-btn:before {
+    left: auto;
+    right: 0;
+}
+.th-btn,
+.link-btn {
+    i {
+        transform: rotateY(180deg);
+    }
+}
+
+select, .form-control, .form-select, textarea, input {
+    direction: ltr;
+}
+.checklist ul {
+    padding: 0;
+    text-align: right;
+}
+.checklist li {
+    padding-right: 28px;
+    padding-left: 0;
+    &:before {
+        right: 0;
+        left: auto;
+    }
+}
+.th-social a {
+    margin-left: 5px;
+    margin-right: 0;
+    @include ml {
+        margin-left: 3px;
+    }
+}
+.th-social a:last-child {
+    margin-left: 0;
+}
+.th-menu-wrapper {
+    direction: ltr;
+}

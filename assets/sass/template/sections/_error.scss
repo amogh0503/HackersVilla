@@ -1,0 +1,23 @@
+.error-page {
+    height: 100vh;
+	display: flex;
+    text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.error-img {
+    margin-bottom: 22px;
+}
+.error-title {
+    margin-bottom: 22px;
+	font-size: 48px;
+	font-weight: 600;
+}
+.error-text {
+    margin-bottom: 30px;
+}
+@include sm {
+	.error-title {
+		font-size: 38px;
+	}
+}

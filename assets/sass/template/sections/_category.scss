@@ -1,0 +1,278 @@
+/* Category 1 ---------------------------------- */
+.category-sec-wrap {
+    .sec-title {
+        font-size: 36px;
+        margin-bottom: 90px;
+        @include xl {
+            margin-bottom: 80px;
+        }
+        @include lg {
+            margin-bottom: 30px;
+        }
+        @include sm {
+            font-size: 28px;
+        }
+    } 
+    .category-slider {
+        padding-top: 35px;
+        .slick-arrow {
+            opacity: 1;
+            visibility: visible;
+            --pos-x: 0;
+            top: 20px;
+            right: 60px;
+            left: auto;
+            width: 40px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 10px;
+            background: $smoke-color;
+            box-shadow: none;
+            color: $theme-color;
+            &.slick-next {
+                right: 10px;
+            }
+            &:hover {
+                background: $theme-color;
+                color: $white-color;
+            }
+        }
+        @include ml {
+            margin-left: 30px;
+        }
+        @include xl {
+            margin-top: 80px;
+        }
+        @include lg {
+            margin-top: 20px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    .category-shape-arrow {
+        @include xl {
+            top: 50px;
+        }
+    }
+}
+.category-card {
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--f-2-f-2-f-2, #F2F2F2);
+    background: var(--white-color, #FFF);
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    &_icon {
+        @include equal-size-lineHeight(60px);
+        min-width: 60px;
+        background-color: $smoke-color;
+        border-radius: 999px;
+        text-align: center;
+        transition: 0.4s ease-in-out;
+        margin: auto;
+        margin-bottom: 20px;
+        img {
+            transition: 0.4s ease-in-out;
+        }
+    }
+    &_title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: -0.23em;
+        margin-bottom: 2px;
+        a {
+            color: inherit;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+    &_text {
+        margin-bottom: 17px;
+    }
+    .th-btn {
+        padding: 10.5px 20px;
+        width: 100%;
+    }
+    &:hover {
+        .category-card {
+            &_icon {
+                background-color: $theme-color;
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+    &.style2 {
+        background: transparent;
+        box-shadow: none;
+        border: 0;
+        padding: 30px;
+        transition: 0.4s; 
+        .category-card_icon {
+            background: #E8EFFA;
+            margin-bottom: 30px;
+            transition: 0.4s;
+            img {
+                filter: none;
+            }
+        } 
+        .box-title {
+            font-weight: 500;
+            margin-bottom: 10px;
+        }  
+        .category-card_text {
+            font-family: $body-font;
+            display: block;
+            margin-bottom: 13px;
+        }  
+        .link-btn {
+            font-weight: 600;
+            color: $title-color;
+            &:hover {
+                color: $theme-color;
+            }
+        } 
+        &.cat-card2-active,
+        &:hover {
+            border-radius: 10px;
+            background: $white-color;
+            box-shadow: 0px 10px 30px 0px rgba(206, 211, 230, 0.45);
+            .category-card_icon {
+                transform: rotateY(180deg);
+            }
+        }  
+    }
+}
+
+@include sm {
+    .category-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        &_content {
+            text-align: center;
+        }
+        &_title {
+            margin-bottom: 10px;
+        }
+        &_text {
+            max-width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+/* Category 2 ---------------------------------- */
+.category-list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    border: 1px solid #D0DBE9;
+    background: $white-color;
+    border-radius: 10px;
+    margin-left: 30px;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    z-index: 2;
+    &:before {
+        content: '';
+        background-color: $theme-color;
+        @include equal-size(0);
+        border-radius: inherit;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: 0.4s linear;
+        z-index: -1;
+    }
+    &_icon {
+        @include equal-size-lineHeight(60px);
+        min-width: 60px;
+        background-color: #EBF2FF;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.4s ease-in-out;
+        margin-right: 15px;
+        border: 1px solid #D0DBE9;
+        margin-left: -30px;
+        img {
+            transition: 0.4s ease-in-out;
+        }
+    }
+    &_content {
+        position: relative;
+        overflow: hidden;
+        padding: 26px 26px 26px 0;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .icon-btn {
+        margin-left: auto;
+        min-width: 50px;
+        border: 1px solid $theme-color;
+        color: $theme-color;
+        position: absolute;
+        bottom: -12px;
+        right: -12px;
+        opacity: 0;
+        line-height: 44px;
+        transition: 0.7s;
+        i {
+            margin-left: -8px;
+        }
+    }
+    &_title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: -0.23em;
+        margin-bottom: 2px;
+        transition: 0.4s ease-in-out;
+        a {
+            color: inherit;
+            transition: 0s;
+        }
+        @include ml {
+            font-size: 22px;
+        }
+        @include xl {
+            font-size: 18px;
+        }
+    }
+    &_text {
+        display: block;
+        margin-bottom: -0.4em;
+        transition: 0.4s ease-in-out;
+    }
+    &:hover {
+        // background-color: $theme-color;
+        box-shadow: 0px 10px 12px 0px rgba(13, 94, 244, 0.20);
+        &:before {
+            width: 100%;
+            height: 100%;
+        }
+        .category-list {
+            &_title {
+                color: $white-color;
+            }
+            &_text {
+                color: $white-color;
+            }
+            &_icon {
+                background: $theme-color;
+                img {
+                    filter: brightness(99);
+                }
+            }            
+        }
+        .icon-btn {
+            background-color: $white-color;
+            color: $theme-color;
+            border-color: $white-color;
+            opacity: 1;
+        }
+    }
+}

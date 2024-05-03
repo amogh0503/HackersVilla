@@ -1,0 +1,171 @@
+.why-shape-2 {
+    background: $smoke-color;
+    min-height: 680px;
+    min-width: 680px;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    @media (max-width: 1600px) {
+        min-width: 530px;
+    }
+    @include xxl {
+        min-width: 500px;
+    }
+    @include ml {
+        min-width: 460px;
+    }
+    @include md {
+        min-width: 530px;
+        min-height: 650px;
+    }
+    @include sm {
+        min-width: 360px;
+        min-height: 520px;
+    }
+    @include xs {
+        width: 100%;
+        min-height: 300px;
+    }
+}
+.wcu-img-1 {
+    position: relative;
+    margin-right: 55px;
+    @include xxl {
+        margin-right: 10px;
+        margin-left: 55px;
+    }
+    @include lg {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    @include vxs {
+        margin-left: 0;
+    }
+    .img1 {
+        img {
+            border-radius: 10px;
+            width: 100%;
+        }
+    }
+    .student-count {
+        position: absolute;
+        left: -80px;
+        bottom: 145px;
+        @include xxl {
+            left: -55px;
+        }
+        @include vxs {
+            left: 0;
+        } 
+    }
+}
+.wcu-img-2 {
+    margin-left: 55px;
+    img {
+        border-radius: 20px;
+    }
+    @include xl {
+        margin-left: 0;
+    }
+}
+.wcu-box {
+    background: $smoke-color;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    gap: 11px;
+    position: relative;
+    z-index: 1;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 10px;
+        background: $theme-color;
+        border-radius: 10px 0 0 10px;
+        z-index: -2;
+    }
+    &:before {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px 0 0 0;
+        background: transparent;
+        border-left: solid 40px #D0DBE9;
+        border-top: solid 40px #D0DBE9;
+        border-bottom: solid 40px transparent;
+        border-right: solid 40px transparent;
+        z-index: -1;
+    }
+    &_icon {
+        font-size: 30px;
+        color: $theme-color;
+        flex: none;
+    }
+    .box-title {
+        margin-bottom: 5px;
+        @include ml {
+            font-size: 20px;
+        }
+    }
+    &_text {
+        margin-bottom: -0.4em;
+        max-width: 226px;
+        @include ml {
+            font-size: 14px;
+        }
+        @include lg {
+            font-size: 16px;
+        }
+    }
+    &.style2 {
+        background: $white-color;
+        border-radius: 10px;
+        box-shadow: 0px 4px 21px 0px rgba(179, 193, 219, 0.15);
+        padding: 30px;
+        gap: 20px;
+        &:before,
+        &:after {
+            display: none;
+        }
+        @include xl {
+            display: block;
+            .wcu-box_icon {
+                margin-bottom: 15px;
+            }
+            .wcu-box_text {
+                font-size: 16px;
+            }
+        }
+        @include lg {
+            display: flex;
+        }
+        @include sm {
+            display: block;
+        }
+        .wcu-box_title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            a {
+                color: $title-color;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+        .wcu-box_text {
+            max-width: none;
+        }
+    }
+}
+.wcu-wrap2 {
+    @include xxl {
+        margin-right: -50px;
+    }
+    @include xl {
+        margin-right: 0;
+    }
+}

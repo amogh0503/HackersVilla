@@ -1,0 +1,25 @@
+.client-thumb {
+    img {
+        opacity: 0.2;
+        transition: 0.4s;
+    }
+    &:hover {
+        img {
+            opacity: 1;
+        }
+    }
+}
+.client-area-3 {
+    padding: 55px 0;
+    text-align: center;
+    .client-thumb {
+        img {
+            opacity: 0.4;
+        }
+        &:hover {
+            img {
+                opacity: 1;
+            }
+        }
+    }
+}

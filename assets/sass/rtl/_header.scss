@@ -1,0 +1,170 @@
+/****header-layout1****/
+.header-layout1 .header-top:after {
+    right: 0;
+    left: auto;
+    border-radius: 0 0 0 50px;
+    @include md {
+        border-radius: 0;
+    }
+}
+.header-links li:not(:last-child) {
+    padding: 0 0 0 20px;
+    margin: 0 0 0 17px;
+}
+.header-links li:not(:last-child):before {
+    left: 0;
+    right: auto;
+}
+.header-links li > i {
+    margin-left: 10px;
+    margin-right: 0;
+}
+.header-layout1 .header-top .header-links.header-right li:first-child {
+    padding-left: 60px;
+    padding-right: 0;
+    @include md {
+        padding-left: 0;
+    }
+}
+.header-social .social-title {
+    margin: 0;
+}
+.header-social a {
+    margin: 0 0 0 15px;
+}
+.header-layout1 .menu-area:after {
+    right: auto;
+    left: 0;
+    border-radius: 0 80px 0 0;
+    @include md {
+        border-radius: 0;
+    }
+}
+.main-menu > ul > li {
+    &:first-child {
+        margin-left: 13px !important;
+    }
+    &:last-child {
+        margin-right: 13px !important;
+    }
+}
+.main-menu ul li:first-child {
+    margin-right: 0 !important;
+}
+.main-menu ul li:last-child {
+    margin-left: 0 !important;
+}
+.main-menu ul.sub-menu li a:before {
+    right: 0;
+    left: auto;
+}
+.main-menu ul.sub-menu li a {
+    padding-left: 0;
+    padding-right: 23px;
+}
+.main-menu ul.sub-menu, .main-menu ul.mega-menu {
+    text-align: right;
+}
+.main-menu ul.sub-menu li.menu-item-has-children > a:after {
+    content: "\f104";
+    margin-right: 5px;
+    margin-left: 0;
+    float: left;    
+}
+.main-menu ul.sub-menu li ul.sub-menu {
+    right: 100%;
+    left: auto;
+    margin: 0 0;
+    margin-right: 20px;
+}
+.main-menu ul.sub-menu {
+    left: auto;
+    right: -27px;
+}
+/****header-layout2****/
+.header-layout-default .header-top {
+    padding: 9px 300px 9px 88px;
+    @include hd {
+        padding: 9px 400px 9px 188px;
+    }
+    @media (max-width:1600px) {
+        padding: 9px 265px 9px 30px;
+    }
+    @include xl {
+        padding: 9px 30px;
+    }
+}
+.header-layout-default .header-top:after {
+    left: auto;
+    right: 0;
+    border-radius: 0 0 0 50px;
+    @include ml {
+        width: calc(100% - 210px);
+    }
+    @include md {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+.header-layout-default .header-top .header-links.header-right li:first-child {
+    padding-left: 60px;
+    padding-right: 0;
+    @include ml {
+        padding-left: 55px;
+    }
+    @include md {
+        padding: 0;
+    }
+}
+.header-layout-default .menu-area {
+    padding: 0 30px 0 88px;
+    @include hd {
+        padding: 0 130px 0 188px;
+    }
+    @media (max-width:1600px) {
+        padding: 0 10px 0 30px;
+    }
+    @include xs {
+        padding: 0;
+    }
+}
+.header-layout-default .logo-bg-half {
+    border-radius: 50px 0 0 0px;
+    right: 0;
+    left: auto;
+}
+.header-layout-default .menu-area .logo-bg {
+    left: auto;
+    right: 0;
+    @include md {
+        border-radius: 0;
+    }
+}
+.header-layout-default .menu-area .main-menu {
+    margin-right: 60px;
+    margin-left: 0;
+    @media (max-width: 1600px) {
+        margin-right: 50px;
+    }
+}
+/****header-layout3****/
+.header-layout3 .logo-bg {
+    right: 0;
+    left: auto;
+    transform: rotateY(180deg);
+}
+.header-layout3 .category-menu-wrap {
+    margin-right: 30px;
+    margin-left: 0;
+}
+.header-button {
+    margin-right: 15px;
+    margin-left: 0;
+}
+/********header-layout3********/
+@include hd {
+    .header-layout3 .menu-area:after {
+        right: -110px;
+        left: auto;
+    }
+}

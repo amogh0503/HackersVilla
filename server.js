@@ -50,15 +50,11 @@ app.get("/",function (req,res) {
 });
 
 app.get("/about",function (req,res) {
-	res
-		.status(200)
-		.sendFile(path.join(__dirname,"about_us.html"));
+	res.redirect('https://explore.hackersvilla.xyz/aboutus');
 });
 
 app.get("/contact",function (req,res) {
-	res
-		.status(200)
-		.sendFile(path.join(__dirname,"contact_us.html"));
+	res.redirect('https://explore.hackersvilla.xyz/contactus');
 });
 
 app.get("/home",function (req,res) {
@@ -67,53 +63,26 @@ app.get("/home",function (req,res) {
 		.sendFile(path.join(__dirname,"index.html"));
 });
 
-app.get("/register",function (req,res) {
-	res
-		.status(200)
-		.sendFile(path.join(__dirname,"signin.html"));
-});
+// app.get("/register",function (req,res) {
+// 	res
+// 		.status(200)
+// 		.sendFile(path.join(__dirname,"signin.html"));
+// });
 
-app.get("/login",function (req,res) {
-	res
-		.status(200)
-		.sendFile(path.join(__dirname,"signin.html"));
-});
+// app.get("/login",function (req,res) {
+// 	res
+// 		.status(200)
+// 		.sendFile(path.join(__dirname,"signin.html"));
+// });
 
-app.get("/terms",function (req,res) {
-	res
-		.status(200)
-		.sendFile(path.join(__dirname,"terms.html"));
-});
 
-app.get("/refund",function (req,res) {
-	res
-		.status(200)
-		.sendFile(path.join(__dirname,"refund.html"));
-});
+// app.get("/ctf",function(req,res) {
+// 	res.status(200).header('Flag', 'KYC{I_will_find_you}').send('Go around!');
+// });
 
-app.get("/privacy",function (req,res) {
-	res
-		.status(200)
-		.sendFile(path.join(__dirname,"privacy.html"));
-});
-
-app.get("/shipping-and-delivery",function (req,res) {
-	res
-		.status(200)
-		.sendFile(path.join(__dirname,"shipping.html"));
-});
-
-app.get("/ctf",function(req,res) {
-	res.status(200).header('Flag', 'KYC{I_will_find_you}').send('Go around!');
-});
-
-app.get("/sqli",function(req,res) {
-	res.redirect('http://loginpage.unaux.com/index.php');
-});
-
-app.get("/bootcamp",function(req,res) {
-	res.redirect('https://imjo.in/uuxMTB');
-});
+// app.get("/sqli",function(req,res) {
+// 	res.redirect('http://loginpage.unaux.com/index.php');
+// });
 
 app.get("/webinar",function(req,res) {
 	res.redirect('https://chat.whatsapp.com/BjwioRfsIHI8yIstvy3G3A');
