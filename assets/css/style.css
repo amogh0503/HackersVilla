@@ -9745,11 +9745,11 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 }
 
 .hero-style2 .checklist ul li:nth-of-type(2):before {
-  color: var(--theme-color2);
+  color: var(--theme-color);
 }
 
 .hero-style2 .checklist ul li:nth-of-type(3):before {
-  color: var(--body-color);
+  color: var(--theme-color);
 }
 
 @media (max-width: 375px) {
