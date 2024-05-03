@@ -298,10 +298,18 @@
                                         <div class="category-menu-wrap mr-5">
                                             <a class="menu-expand"><i class="fa-solid fa-grid-2 me-2"></i>Search Here</a>
                                             
-                                            <form class="search-form" action="https://explore.hackersvilla.xyz/s/store/courses" method="GET">
-                                                <input type="text" placeholder="Type Anything...">
-                                                <button type="submit"><i class="far fa-search"></i></button>
+                                            <form class="search-form" id="form" action="https://explore.hackersvilla.xyz/s/store/courses" method="GET">
+                                                <input type="text" id="query" name="query" placeholder="Type Anything...">
+                                                <button onclick="search(document.getElementById('query').value)"><i class="far fa-search"></i></button>
                                             </form>
+                                            <script>
+                                                function search(query){
+                                                    var f = document.form;
+                                                    f.method = "get";
+                                                    f.action = 'https://explore.hackersvilla.xyz/s/store/courses?q='+query;
+                                                    f.submit();
+                                                }
+                                            </script>
                                         </div>
                                         <a href="https://explore.hackersvilla.xyz/contactus" class="th-btn ml-20">Contact Us <i class="fas fa-arrow-right ms-1"></i></a>
                                     </div>
