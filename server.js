@@ -118,6 +118,33 @@ app.get("/hacknslash-workshop-thank-you",function (req,res) {
 		.sendFile(path.join(__dirname,"/workshop/thanks.html"));
 });
 
+app.get("/terms",function (req,res) {
+	res.redirect('https://explore.hackersvilla.xyz/termsofuse');
+});
+
+app.get("/shipping-and-delivery",function (req,res) {
+	res.redirect('https://explore.hackersvilla.xyz/termsofuse');
+});
+
+app.get("/privacy",function (req,res) {
+	res.redirect('https://explore.hackersvilla.xyz/privacypolicy');
+});
+
+
+app.get("/about",function (req,res) {
+	res.redirect('https://explore.hackersvilla.xyz/aboutus');
+});
+
+app.get("/contact",function (req,res) {
+	res.redirect('https://explore.hackersvilla.xyz/contactus');
+});
+
+app.get("/refund",function (req,res) {
+	res.redirect('https://explore.hackersvilla.xyz/refundpolicy');
+});
+
+
+
 app.get("/*",function (req,res) {
 	res
 		.status(404)
